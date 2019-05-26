@@ -1,9 +1,8 @@
-# Taiga Front #
+# FoamFactory Taiga Front Distribution
 
-[![Kaleidos Project](http://kaleidos.net/static/img/badge.png)](https://github.com/kaleidos "Kaleidos Project")
-[![Managed with Taiga.io](https://img.shields.io/badge/managed%20with-TAIGA.io-709f14.svg)](https://tree.taiga.io/project/taiga/ "Managed with Taiga.io")
+**IMPORTANT**: This is a special version of https://github.com/taigaio/taiga-front-dist designed to be used by the FoamFactory project. It has special commits that are only relevant to FoamFactory and should **never** be merged back upstream.
 
-This repo is a compiled versión of https://github.com/taigaio/taiga-front
+This repo is a compiled versión of https://github.com/FoamFactory/taiga-front
 
 ## Installation ##
 
@@ -23,8 +22,4 @@ git checkout master; node dist.js master
 git checkout stable; node dist.js stable
 ```
 
-## Community ##
-
-[Taiga has a mailing list](http://groups.google.com/d/forum/taigaio). Feel free to join it and ask any questions you may have.
-
-To subscribe for announcements of releases, important changes and so on, please follow [@taigaio](https://twitter.com/taigaio) on Twitter.
+Note that currently, `master` does not work on `mustafar`.
