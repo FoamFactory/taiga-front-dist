@@ -5,7 +5,7 @@ var exec = Promise.promisify(require('child_process').exec);
 var ncp = Promise.promisify(require('ncp').ncp);
 
 var local = 'tmp';
-var repo = 'https://github.com/taigaio/taiga-front';
+var repo = 'https://github.com/FoamFactory/taiga-front';
 
 if (process.argv.length !== 3){
     console.log("¡Error!, call me with somethink like: \nnode dist.js branch_name");
@@ -35,7 +35,7 @@ exec(synchRepoAction)
     .then(function() {
         console.log("compile taiga")
         //compile taiga
-        return exec('cd ' + local + ' && npm install && gulp deploy');
+        return exec('cd ' + local + ' && npm update && npm install && node node_modules/node-sass/scripts/install.js && npm rebuild node-sass && gulp deploy');
     })
     .then(function() {
         console.log("remove old dist")
